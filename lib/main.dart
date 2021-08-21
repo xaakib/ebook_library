@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'screens/home_screen.dart';
 import 'screens/main_screen.dart';
@@ -10,7 +11,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Ebook Library',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
