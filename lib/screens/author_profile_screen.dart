@@ -15,6 +15,7 @@ class _AuthorProfileScreenState extends State<AuthorProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    print("Loaded");
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
