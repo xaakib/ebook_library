@@ -12,7 +12,7 @@ class FriendsTabScreen extends StatelessWidget {
       body: Container(
         height: mediaQueryHeightScreen,
         width: mediaQueryWidthScreen,
-        child: Text("Freind Screen"),
+        child: Center(child: Text("Freind Screen")),
       ),
     );
   }

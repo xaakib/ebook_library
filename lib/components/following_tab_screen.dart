@@ -12,7 +12,7 @@ class FollowingTabScreen extends StatelessWidget {
       body: Container(
         height: mediaQueryHeightScreen,
         width: mediaQueryWidthScreen,
-        child: Text("Following Tav Screen"),
+        child: Center(child: Text("Following Tav Screen")),
       ),
     );
   }
