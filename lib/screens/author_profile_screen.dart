@@ -25,7 +25,7 @@ class _AuthorProfileScreenState extends State<AuthorProfileScreen> {
           },
           icon: Icon(Icons.arrow_back_outlined, color: Colors.black),
         ),
-        title: Text("Author Profile", style: texstyleBoldBlack16),
+        title: Text("Author Profile", style: texstylew700Black16),
         actions: [
           IconButton(
               onPressed: () {},
@@ -69,7 +69,7 @@ class _AuthorProfileScreenState extends State<AuthorProfileScreen> {
                             children: [
                               SizedBox(height: 10),
                               Text("Tetsuko Kuroyanagi",
-                                  style: texstyleBoldBlack16),
+                                  style: texstylew700Black16),
                               SizedBox(height: 5),
                               Text("Author of 21 books",
                                   style: textsyleGreyNormal),

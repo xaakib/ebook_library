@@ -104,7 +104,7 @@ class DivscoverScreen extends StatelessWidget {
                               SizedBox(height: 5),
                               Text(
                                 "Best Books Ever",
-                                style: texstyleBoldBlack16,
+                                style: texstylew700Black16,
                               ),
                               Text(
                                 "56,863 books",

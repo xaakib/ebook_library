@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'components/readers_follow_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/main_screen.dart';
 
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ReadersFollowScreen(),
+      home: MainScreen(),
     );
   }
 }
