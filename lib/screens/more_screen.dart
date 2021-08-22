@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'author_profile_screen.dart';
+import 'friend_and_follower_screen.dart';
 
 class MoreScreen extends StatefulWidget {
   const MoreScreen({Key? key}) : super(key: key);
@@ -59,7 +60,7 @@ class _MoreScreenState extends State<MoreScreen> {
               Divider(),
               InkWell(
                 onTap: () {
-                  Get.to(AuthorProfileScreen());
+                  Get.to(FriendAndFollowerScreen());
                 },
                 child: ListTile(
                   title: Text(
