@@ -8,7 +8,6 @@ class FollowingTabScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double mediaQueryHeightScreen = MediaQuery.of(context).size.height;
-
     double mediaQueryWidthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
