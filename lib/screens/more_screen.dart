@@ -12,15 +12,6 @@ class MoreScreen extends StatefulWidget {
 }
 
 class _MoreScreenState extends State<MoreScreen> {
-  final List moreItems = [
-    'Profile',
-    'Wallet',
-    'Contact',
-    'Settings',
-    'Privacy',
-    'About'
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,26 +19,94 @@ class _MoreScreenState extends State<MoreScreen> {
           height: double.infinity,
           width: double.infinity,
           color: Colors.white,
-          child: ListView.builder(
-              itemCount: moreItems.length,
-              itemBuilder: (context, index) {
-                return InkWell(
-                  onTap: () {
-                    Get.to(AuthorProfileScreen());
-                  },
-                  child: Column(
-                    children: [
-                      ListTile(
-                        title: Text(
-                          moreItems[index],
-                          style: texstyleBoldBlack,
-                        ),
-                      ),
-                      Divider(),
-                    ],
+          child: Column(
+            children: [
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Profile',
+                    style: texstyleBoldBlack,
                   ),
-                );
-              })),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Wallet',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Contact',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Friend & Followers',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Settings',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'Privacy',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+              InkWell(
+                onTap: () {
+                  Get.to(AuthorProfileScreen());
+                },
+                child: ListTile(
+                  title: Text(
+                    'About',
+                    style: texstyleBoldBlack,
+                  ),
+                ),
+              ),
+              Divider(),
+            ],
+          )),
     );
   }
 }

@@ -40,7 +40,7 @@ class ReadersFollowScreen extends StatelessWidget {
                           children: [
                             Container(
                               height: 50,
-                              width: 50,
+                              width: 50, 
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       fit: BoxFit.cover,
