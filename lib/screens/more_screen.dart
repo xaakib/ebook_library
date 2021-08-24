@@ -3,6 +3,7 @@ import 'package:ebook_library/style/style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'about_screen.dart';
 import 'author_profile_screen.dart';
 import 'friend_and_follower_screen.dart';
 
@@ -99,7 +100,7 @@ class _MoreScreenState extends State<MoreScreen> {
                 Divider(),
                 InkWell(
                   onTap: () {
-                    Get.to(AuthorProfileScreen());
+                    Get.to(AboutScreen());
                   },
                   child: ListTile(
                     title: Text(

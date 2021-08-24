@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 TextStyle texstyleBoldBlack =
     TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontSize: 18);
@@ -21,3 +22,17 @@ TextStyle texstyleNormalBlack14 = TextStyle(
 
 TextStyle textStyleGreenDark = TextStyle(
     fontWeight: FontWeight.bold, color: Colors.green[900], fontSize: 14);
+
+TextStyle textStyleBlueNormal = TextStyle(
+  color: Colors.blue,
+);
+TextStyle googleFontBlue = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.blue, letterSpacing: .5, fontWeight: FontWeight.bold));
+
+TextStyle googleFontBlack = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.black, letterSpacing: .5, fontWeight: FontWeight.bold,fontSize: 14));
+
+TextStyle googleFontGreyNormal = GoogleFonts.lato(
+    textStyle: TextStyle(color: Colors.grey, letterSpacing: .5,fontSize: 11));
