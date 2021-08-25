@@ -31,28 +31,22 @@ class _HomeScreenState extends State<HomeScreen> {
 
   int menuItemSelect = 0;
   final List booksList = [
+    "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/who_moved_my_cheese-Spencer_Johnson-f10e9-218101.jpg",
+    "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/rokimg_20140603_70434.gif",
     "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
+    "https://s3.us-west-2.amazonaws.com/boitoi/media/book/560d212c-3a99-4da3-bcd5-166da904ec33_lg.jpg",
+    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
+    "https://s3.us-west-2.amazonaws.com/boitoi/media/book/8eb97fbc-274e-4508-a9e9-98eadc27fccd_lg.jpg",
     "https://images.squarespace-cdn.com/content/v1/5202d1b3e4b099a0812c51a3/1483134090134-QOJK8Q9CL5DMFN99XWQO/Before-Sunrise.jpg",
-    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
-    "https://images.squarespace-cdn.com/content/v1/5202d1b3e4b099a0812c51a3/1483134090134-QOJK8Q9CL5DMFN99XWQO/Before-Sunrise.jpg",
-    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
-
-    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
-    "https://images.squarespace-cdn.com/content/v1/5202d1b3e4b099a0812c51a3/1483134090134-QOJK8Q9CL5DMFN99XWQO/Before-Sunrise.jpg",
-    // "https://marketplace.canva.com/EAD7YH8bebE/1/0/1003w/canva-white-bold-text-thriller-mystery-book-cover-9g0hPVfwFlI.jpg",
-    // "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/mystery-book-cover-design-template-a5dce61a0c99630dedab42e3a4c15618_screen.jpg?ts=1598009661",
-    // "https://www.bookcoversart.com/wp-content/uploads/2019/11/Thriller-Espionage-Premade-Book-Cover-The-Truth-Unravels.jpg",
-    // "https://m.media-amazon.com/images/I/51ouoRh9nPL.jpg",
-    // "https://m.media-amazon.com/images/I/51GkXpaDsYL.jpg",
   ];
   final List imageList = [
-    "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1585834376592-96e6797eede1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3MlMjBwb3N0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1619164816991-22d393238d8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvb2tzJTIwcG9zdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJvb2tzJTIwcG9zdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1585834447635-ac12228f315b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGJvb2tzJTIwcG9zdGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1513001900722-370f803f498d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJvb2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    "https://images.unsplash.com/photo-1585834376592-96e6797eede1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3MlMjBwb3N0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/who_moved_my_cheese-Spencer_Johnson-f10e9-218101.jpg",
+    "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/rokimg_20140603_70434.gif",
+    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
+    "https://s3.us-west-2.amazonaws.com/boitoi/media/book/560d212c-3a99-4da3-bcd5-166da904ec33_lg.jpg",
+    "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-thriller-book-cover-design-template-3675ae3e3ac7ee095fc793ab61b812cc_screen.jpg?ts=1588152105",
+    "https://s3.us-west-2.amazonaws.com/boitoi/media/book/8eb97fbc-274e-4508-a9e9-98eadc27fccd_lg.jpg",
+    "https://images.squarespace-cdn.com/content/v1/5202d1b3e4b099a0812c51a3/1483134090134-QOJK8Q9CL5DMFN99XWQO/Before-Sunrise.jpg",
   ];
 
   @override

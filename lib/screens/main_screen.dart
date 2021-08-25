@@ -122,12 +122,14 @@ class _MainScreenState extends State<MainScreen> {
                     )),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.home),
+                  leading: Icon(
+                    Icons.redeem_outlined,
+                  ),
                   title: Text('Wishlist'),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: Icon(Icons.account_circle_rounded),
+                  leading: Icon(LineIcons.bookmarkAlt),
                   title: Text('Bookmark'),
                 ),
                 ListTile(
@@ -162,8 +164,6 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   void _handleMenuButtonPressed() {
-    // NOTICE: Manage Advanced Drawer state through the Controller.
-    // _advancedDrawerController.value = AdvancedDrawerValue.visible();
     _advancedDrawerController.showDrawer();
   }
 }

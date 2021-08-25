@@ -32,7 +32,34 @@ TextStyle googleFontBlue = GoogleFonts.lato(
 
 TextStyle googleFontBlack = GoogleFonts.lato(
     textStyle: TextStyle(
-        color: Colors.black, letterSpacing: .5, fontWeight: FontWeight.bold,fontSize: 14));
+        color: Colors.black,
+        letterSpacing: .5,
+        fontWeight: FontWeight.bold,
+        fontSize: 14));
+
+TextStyle googleFontBlack18 = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.black,
+        letterSpacing: .5,
+        fontWeight: FontWeight.bold,
+        fontSize: 18));
 
 TextStyle googleFontGreyNormal = GoogleFonts.lato(
-    textStyle: TextStyle(color: Colors.grey, letterSpacing: .5,fontSize: 11));
+    textStyle: TextStyle(color: Colors.grey, letterSpacing: .5, fontSize: 11));
+TextStyle googleFontYellowNormal = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.yellow[900],
+        letterSpacing: .5,
+        fontSize: 11,
+        fontWeight: FontWeight.w700));
+        TextStyle googleFontBlackNormal = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.black,
+        letterSpacing: .5,
+        fontSize: 12));
+        TextStyle googleFontBlack18W500 = GoogleFonts.lato(
+    textStyle: TextStyle(
+        color: Colors.black,
+        letterSpacing: .5,
+        fontWeight: FontWeight.w500,
+        fontSize: 18));
