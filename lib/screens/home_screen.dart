@@ -41,21 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        centerTitle: true,
-        elevation: 0,
-        leading: IconButton(
-            icon: Icon(LineIcons.listUl, color: Colors.blue), onPressed: () {}),
-        title: Text(
-          "HOME",
-          style: GoogleFonts.lato(
-              textStyle: TextStyle(
-                  color: Colors.blue,
-                  letterSpacing: .5,
-                  fontWeight: FontWeight.bold)),
-        ),
-      ),
       body: Container(
           height: double.infinity,
           width: double.infinity,
