@@ -1,9 +1,7 @@
-import 'package:ebook_library/components/readers_follow_screen.dart';
-import 'package:ebook_library/screens/discover_screen.dart';
 import 'package:ebook_library/screens/home_screen.dart';
-import 'package:ebook_library/screens/more_screen.dart';
-import 'package:ebook_library/screens/search_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'my_book_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -17,10 +15,7 @@ class _MainScreenState extends State<MainScreen> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    ReadersFollowScreen(),
-    DivscoverScreen(),
-    SearchScreen(),
-    MoreScreen(),
+    MyBookScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -43,18 +38,6 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.book_outlined),
             label: 'My Books',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.explore_outlined),
-            label: 'Discover',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search_sharp),
-            label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu_outlined),
-            label: 'More',
           ),
         ],
         currentIndex: _selectedIndex,
