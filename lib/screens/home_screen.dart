@@ -1,8 +1,11 @@
 import 'package:ebook_library/components/home_image_slider.dart';
 import 'package:ebook_library/style/style.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
+
+import 'show_all_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -55,7 +58,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text("Your Interest", style: googleFontBlack),
-                      Text("Show All", style: googleFontBlue)
+                      InkWell(
+                          onTap: () => Get.to(
+                              ShowAllScreen(imageList: imageList),
+                              transition: Transition.zoom),
+                          child: Text("Show All", style: googleFontBlue))
                     ],
                   ),
                   SizedBox(height: 10),
